@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Напишите программу, которая 
+// 1. принимает на вход принимает число (N)
+// а на выходе показывает все четные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6,8
