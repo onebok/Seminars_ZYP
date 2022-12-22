@@ -12,5 +12,14 @@ Console.WriteLine($"Случайное число из диапазона 10 - 9
 
 int firstdigit =  number / 10;
 int seconddigit =  number % 10;
-if (firstdigit > seconddigit) Console.WriteLine($"Наибольшая цифра числа {firstdigit} ");
-else Console.WriteLine($"Наибольшая цифра числа {seconddigit} ");
+// if (firstdigit > seconddigit) Console.WriteLine($"Наибольшая цифра числа {firstdigit} ");
+// else Console.WriteLine($"Наибольшая цифра числа {seconddigit} ");
+
+// Console.Write("Наибольшая цифра числа = ");
+// // интерполяция не нужна $ нет как в 15 строке
+// // Тернарный оператор
+// Console.WriteLine(firstdigit > seconddigit ? firstdigit : seconddigit);
+
+int rezult = firstdigit > seconddigit ? firstdigit : seconddigit;
+Console.Write("Наибольшая цифра числа = ");
+Console.WriteLine(rezult);
