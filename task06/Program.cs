@@ -9,16 +9,14 @@
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int number = count
-if (count % 2 = 0)
+//int num = number;
+//Console.ReadLine (number %2);
+if (number % 2 == 0)
+//    Console.WriteLine($"Число {num} ");
 {
     Console.WriteLine("Число четное ");
 }
-// if (number % 2 = 0)
-// {
-//    Console.WriteLine("Число четное ");
-// }
-elsе (count % 2 = 1);
-{
-    Console.WriteLine("Число не четное");
-}
+ if (number % 2 == 1)
+ {
+    Console.WriteLine("Число нечетное ");
+ }
