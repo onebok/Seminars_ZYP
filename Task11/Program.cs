@@ -5,12 +5,22 @@
 // 782 -> 72
 // 918 -> 98
 
-int number = new Random().Next(100, 1000);
-Console.WriteLine($"Случайное число из диапазона 100 - 999 -> {number} ");
+// int number = new Random().Next(100, 1000);
+// Console.WriteLine($"Случайное число из диапазона 100 - 999 -> {number} ");
 
-int firstDigit = number / 100;
+// int firstDigit = number / 100;
 
-int treeDigit = number % 10;  
+// int treeDigit = number % 10;  
 
-int rezult = firstDigit * 10 + treeDigit;
-Console.WriteLine(rezult);
+// int rezult = firstDigit * 10 + treeDigit;
+// Console.WriteLine(rezult);
+
+int rand = new Random().Next(100, 1000);
+
+int DelDigit(int number)
+{
+    int rezult = (number / 100 + number % 10);
+    return rezult;
+}
+int newDigit = DelDigit(rand);
+Console.WriteLine($"{rand} -> {newDigit}");
