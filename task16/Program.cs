@@ -13,9 +13,16 @@ int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите второе число");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(IsSquare(number1, number2) ? "да" : "нет");
+int square1 = number1 * number1;
+// Console.WriteLine($"{square1}");
+int square2 = number2 * number2;
+// Console.WriteLine($"{square2}");
 
-bool IsSquare(int n1, int n2)
+if (square1 % square2 ==0 || square2 % square1 ==0)
 {
-    return n1 % n2 == 0 || n2 % n1 == 0;
+    Console.WriteLine("да");
 }
+else 
+{
+    Console.WriteLine("нет");
+} 
