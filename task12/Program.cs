@@ -28,6 +28,3 @@ else
 {
     Console.WriteLine($"{userNumber}, {userNumber2} -> не кратно, остаток " + (userNumber % userNumber2));
 }
-
-
-
