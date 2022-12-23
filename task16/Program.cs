@@ -8,21 +8,27 @@
 // 25, 5 -> да
 // 8, 9 -> нет
 
-Console.WriteLine("введите первое число");
+Console.WriteLine("Введите первое число");
 int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите второе число");
+Console.WriteLine("Введите второе число");
 int number2 = Convert.ToInt32(Console.ReadLine());
 
-int square1 = number1 * number1;
-// Console.WriteLine($"{square1}");
-int square2 = number2 * number2;
-// Console.WriteLine($"{square2}");
+// int square1 = number1 * number1;
+// // Console.WriteLine($"{square1}");
+// int square2 = number2 * number2;
+// // Console.WriteLine($"{square2}");
 
-if (square1 % square2 ==0 || square2 % square1 ==0)
+// if (square1 % square2 ==0 || square2 % square1 ==0)
+// {
+//     Console.WriteLine("да");
+// }
+// else 
+// {
+//     Console.WriteLine("нет");
+// } 
+Console.WriteLine(IsSquare(number1, number2) ? "да" : "нет");
+
+bool IsSquare(int n1, int n2)
 {
-    Console.WriteLine("да");
+   return (n1 / n2 == n2) || (n2 / n1 == n1);
 }
-else 
-{
-    Console.WriteLine("нет");
-} 
