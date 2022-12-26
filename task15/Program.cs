@@ -10,24 +10,20 @@
 Console.WriteLine("Введите целое число от 1 до 7: ");
 int weekDay = Convert.ToInt32(Console.ReadLine());
 
-// Console.WriteLine(IsSquare(number1, number2) ? "да" : "нет");
+   if (weekDay < 1 && weekDay >7)
+   
+      {
+      Console.WriteLine("Число введено неверно"); 
 
-// bool IsSquare(int n1, int n2)
-// {
-//    return (n1 / n2 == n2) || (n2 / n1 == n1);
-// }
+      }
 
 
-if (weekDay < 1 & weekDay >7)
+if (weekDay >= 1 & weekDay <= 5)
 {
-   Console.WriteLine("Число введено неверно"); 
+   Console.WriteLine("рабочий день"); 
 }
 
-
-Console.WriteLine(WeekDay(wd) ? "рабочий день" : "выходной");
-
-bool WeekDay(int wd)
+else if (weekDay ==6 || weekDay == 7)
 {
-   return (wd > 1 & wd < 5) || (wd == 5 || wd == 6);
+   Console.WriteLine("выходной");
 }
-
