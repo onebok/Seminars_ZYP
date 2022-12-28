@@ -11,9 +11,9 @@ Console.WriteLine("Введите целое число от 1 до 7: ");
 int weekDay = Convert.ToInt32(Console.ReadLine());
 
    if (weekDay < 1 && weekDay >7)
-   
+
       {
-      Console.WriteLine("Число введено неверно"); 
+      Console.WriteLine("Число введено неверно"); // Почему-то не срабатывает?
 
       }
 

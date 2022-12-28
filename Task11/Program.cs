@@ -20,7 +20,7 @@ int rand = new Random().Next(100, 1000);
 
 int DelDigit(int number)
 {
-    int rezult = (number / 100 + number % 10);
+    int rezult = ((number / 100)*10 + number % 10);
     return rezult;
 }
 int newDigit = DelDigit(rand);
