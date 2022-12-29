@@ -15,21 +15,19 @@ if (number >= 100 && number <=1000)
 
     Console.WriteLine($"Третья цифра введенного числа {number % 10} "); //)
 
-else number >=1000;
-{    
-       while
-    {       
-        int tmp = number;       
-        tmp = tmp - (tmp % 10); 
+if (number < 100)
+    Console.WriteLine(" У введенного числа третьей цифры нет ");
 
-    Console.WriteLine("Третья цифра введенного числа  "); 
-             
-    } 
-    while 
-        (number <= 100);
-     Console.WriteLine(" У введенного числа третьей цифры нет ");
+ //if (number > 1000)
+    
+while (number > 1000)
+{
+    do
+    {
+         number = number /10;
+   
+    } while (number > 1000);
+
+    
+    Console.WriteLine($"Третья цифра введенного числа {number % 10} ");
 }
-        
-    //    Console.WriteLine($"Третья цифра введенного числа {number % 10} ");
-
-
