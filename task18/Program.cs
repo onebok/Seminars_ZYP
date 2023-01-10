@@ -9,11 +9,11 @@ Console.WriteLine("Введите номер четверти");
 
 int number = Convert.ToInt32(Console.ReadLine());
 
-string range = Quarter(number);
+string range = Range(number);
 
 Console.WriteLine(range);
 
-string Quarter(int num)	
+string Range(int num)	
 	{			
 		if (num == 1) return "X > 0, Y > 0"; 
 		if (num == 2) return "X < 0, Y > 0";
