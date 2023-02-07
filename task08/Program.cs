@@ -14,3 +14,4 @@ while (counter <= number)
     Console.Write(counter + " ");
     counter = counter + 2;
 }
+
