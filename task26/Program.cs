@@ -19,5 +19,5 @@ int QuantityNumbers (int num)
     }
     return counter;
 }
-int res = QuantityNumbers(number);
+int res = QuantityNumbers(Math.Abs(number));
 Console.WriteLine($"Количество цифр в числе {res}");
