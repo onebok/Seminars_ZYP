@@ -20,4 +20,4 @@ int QuantityNumbers (int num)
     return counter;
 }
 int res = QuantityNumbers(number);
-Console.WriteLine($"Количество цифр в числе {res} 5");
+Console.WriteLine($"Количество цифр в числе {res}");
