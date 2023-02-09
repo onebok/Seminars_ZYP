@@ -8,8 +8,15 @@
 
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int result = DigitMultiplication(number);
-Console.WriteLine($"Произведение чисел от 1 до {number} = {result} ");
+if (number >0)
+    {
+        int result = DigitMultiplication(number);
+        Console.WriteLine($"Произведение чисел от 1 до {number} = {result} ");
+    }
+    else Console.WriteLine("Введено некоректное значение ");
+    {
+        
+    }
 
 int DigitMultiplication(int num)
 {
