@@ -9,6 +9,10 @@
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
+// Похоже, я перепутал температуру кипения воды, 
+// с прямым углом (придумал свою математику, 
+// факториал, чуть-чуть другое)
+
 int GetFact(int num)
 {
     int counter = 1;
