@@ -34,7 +34,7 @@ int[] InversionNum(int[] array)
     }
     return array;
 }
-int[] arr = CreateArrayRndInt(4, -8, 2);
+int[] arr = CreateArrayRndInt(4, -8, 8);
 PrintArray(arr);
 int[] inversionNum = InversionNum(arr);
 PrintArray(inversionNum);
