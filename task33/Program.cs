@@ -3,52 +3,40 @@
 // 2. определяет, присутствует ли заданное число в массиве.
 // 4 -> массив [6, 7, 19, 345, 3] -> нет
 // -3 -> массив [6, 7, 19, 345, 3] -> да
-Console.WriteLine("Введите число, которое надо найти в массиве ");
-int number = Convert.ToInt32(Console.ReadLine());
-int[] CreateArrayRndInt(int size, int min, int max)
-{
-    int[] array = new int[size]; //array.Length==size
-    var rnd = new Random();
 
-for (int i = 0; i < size; i++)
-{
-    array[i] = rnd.Next(min, max+1);
-}
-    return array;    
-}
+int[] newArr = RandomArray(10);
+PrintArray(newArr);
+System.Console.WriteLine(GetFindNum(-2, newArr));
 
-
-void PrintArray(int[] array)
+bool GetFindNum(int num, int[] arr)
 {
-    Console.Write("[");
-    for (int i = 0; i < array.Length; i++)
+    for(int i = 0; i < arr.Length; i++)
     {
-        if (i < array.Length -1) Console.Write($"{array[i]}, ");
-        else Console.Write($"{array[i]}");   
-    }
-    Console.WriteLine("]");
-} 
-
-bool CheckNumber(int[] array, int arg)
-{
-    bool checkNum = false;
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] == arg) 
+        if(arr[i] == num)
         {
-        checkNum = true;
-        break;
+            return true;
         }
     }
-        return checkNum;
+    return false;
 }
 
-int[] arr = CreateArrayRndInt(12, -9, 9);
-PrintArray(arr);
-bool checkNumber = CheckNumber(arr, number);
 
+int[] RandomArray(int length)
+{
+     int[]arr = new int[length];
+     for(int i = 0; i < length; i++)
+     {
+         arr[i] = new Random().Next(-9,10);
+     }
+     return arr;
+}
 
-
-if (CheckNumber(arr, number)) 
-Console.WriteLine("Yes");
-else Console.WriteLine("No");
+void PrintArray(int[] arr)
+{
+    
+    foreach(int item in arr)
+    {
+        System.Console.Write($"{item}, ");
+    } 
+    System.Console.WriteLine();
+}
