@@ -5,7 +5,7 @@
 
 int[] newArr = RandomArray(5);
 PrintArray(newArr);
-Console.WriteLine(GetMeSumOdd(newArr));
+System.Console.WriteLine(GetMeSumOdd(newArr));
 
 
 int GetMeSumOdd(int[] arr)
@@ -33,8 +33,7 @@ int[] RandomArray(int length)
 }
 
 void PrintArray(int[] arr)
-{
-    
+{    
     foreach(int item in arr)
     {
         Console.Write($"{item}, ");
