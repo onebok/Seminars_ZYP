@@ -21,7 +21,7 @@ void  NaturalNumbersFromMToN(int numM, int numN)
 	}
 	if (numM > numN)
 	{
-		Console.Write($"numM ");
+		Console.Write($"{numM} ");
 		NaturalNumbersFromMToN(numM - 1, numN);
 	}
 	if  (numN == numM) Console.Write($"{numM} ");
