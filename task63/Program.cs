@@ -11,9 +11,9 @@ NaturalNumbers(number);
 
 void  NaturalNumbers (int num)
 {
-	if (num ==0) return;
+	if (num == 0) return;
 	NaturalNumbers(num - 1);
-	Console.Write($"(num) "); // вывод по порядку
+	Console.Write($"{num} "); // вывод по порядку
 }
 
 //{
